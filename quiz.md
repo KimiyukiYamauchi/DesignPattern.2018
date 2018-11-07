@@ -1,5 +1,25 @@
 # 課題
 
+## 11/09
+- 1109ディレクトリを作成し、以下のソースを格納し、GitHubのリポジトリへpush
+- 格納するソースには以下も含める
+	- Main => 動作確認
+	- framework/Product
+	- framework/Factory
+- Factory Methodパターンの実装
+- framwork/Factoryの実装
+	- AccountFactory
+		- createProduct -> 新しいアカウント(id/仮パスワード)作成(override)
+		- registerProduct -> 作成済みのアカウント(id/パスワード)管理(override)
+		- getAccounts -> アカウントのリストを返す(add)
+- framwork/Productの実装
+	- Account
+		- use -> アカウントを使用した旨のメッセージ(override)
+		- getAccount -> アカウントを返す(add)
+		- getPassword -> パスワードを返す(add)
+		- setPassword -> パスワードを設定する(add)
+
+
 ## 11/02
 - 1102ディレクトリを作成
 - Singletonクラスを改造して、インスタンスを3つ生成し、  
