@@ -22,6 +22,7 @@ public class TextBuilder extends Builder {
     public void close() {
         buffer.append("==============================\n");
     }
+    @Override
     public String getResult() {
         return buffer.toString();
     }
